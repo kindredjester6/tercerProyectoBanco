@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio Sesion</title>
+</head>
+<body>
+    <style>
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            border: 2px solid black;
+        }
+
+        .container>label{
+            margin-top: 1%;
+        }
+        .containerBtn{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10%;
+            margin-top: 1%;
+        }
+    </style>
+    <form id="contact-form">      
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+      
+          <div class="containerBtn" style="background-color:#f1f1f1">
+              <button type="submit">Login</button>
+              <button type="button" class="cancelbtn">Cancel</button>
+          </div>
+        </div>
+        
+      </form>
+
+      <script src="main.js"></script>
+</body>
+</html>
